@@ -299,13 +299,13 @@ AVR+PSS
         //
         // 1) NONLINEAR PLANT:
         // This is the model that will be linearized, i.e. the nonlinear plant model
-         input String pathToNonlinearPlantModel = "PSSMonitoringRedesign.PSModels.ModelsForLinearAnalysis.NonlinModel_for_Linearization" "Nonlinear plant model";
+         input String pathToNonlinearPlantModel = "PSSMonitoringRedesign.PSModels.LinearAnalysis.NonlinModel_for_Linearization" "Nonlinear plant model";
         //
         //
         // 2) NONLINEAR EXPERIMENT: this is a model which applies a change to the input of the nonlinear model.
         // It must match the nonlinar plant above.
         // This model will be simulated, and the simulation results will be compared to the simulation of the corresponding linearized model.
-        input String pathToNonlinearExperiment= "PSSMonitoringRedesign.PSModels.ModelsForLinearAnalysis.NonlinModel_for_NonlinExperiment" "Nonlinear experiment model";
+        input String pathToNonlinearExperiment= "PSSMonitoringRedesign.PSModels.LinearAnalysis.NonlinModel_for_NonlinExperiment" "Nonlinear experiment model";
         //
         //
         // 3) LINEAR EXPERIMENT: this is a template that can be used for all three cases, so it is not necessary to create other cases here
